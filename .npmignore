@@ -1,5 +1,7 @@
 src
 .idea
+.vscode
+.atom
 .env.dist
 docker-compose.yml
 .travis.yml
