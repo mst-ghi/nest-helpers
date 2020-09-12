@@ -34,8 +34,14 @@ console.log(bar); // foo_bar
 ```typescript
 import { ExistValueInEnum } from 'nest-helpers';
 
-let yourEnum = ['foo', 'bar'];
-let flag = ExistValueInEnum(yourEnum, 'foo');
+enum DeviceType {
+  Android = 'android',
+  AndroidEmu = 'androidEmu',
+  Ios = 'ios',
+  IosEmu = 'iosEmu',
+}
+
+let flag = ExistValueInEnum(DeviceType, 'android');
 if (flag) console.log('exist');
 else console.log('not exist');
 ```
